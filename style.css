@@ -1,0 +1,58 @@
+/* Fuente principal (ya debe estar importada en el HTML) */
+body {
+  font-family: 'Urbanist', sans-serif;
+  background-color: var(--color-fondo-general);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Variables de color */
+:root {
+  --color-hero: #5AAAFD;
+  --color-about: #7394EF;
+  --color-servicios: #8A7BDA;
+  --color-testimonios: #9C61BF;
+  --color-acento: #A8449F;
+
+  --color-texto-principal: #222222;
+  --color-tarjeta: #ffffff;
+  --color-fondo-general: #f4f4f4;
+}
+
+/* Tarjeta principal */
+.resumen-tarjeta {
+  background-color: var(--color-tarjeta);
+  border: 3px solid var(--color-hero);
+  border-radius: 16px;
+  padding: 24px 32px;
+  max-width: 420px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
+}
+
+.resumen-tarjeta:hover {
+  transform: translateY(-4px);
+}
+
+/* Título */
+.resumen-tarjeta h2 {
+  color: var(--color-hero);
+  font-size: 26px;
+  margin-bottom: 20px;
+}   
+
+/* Ítems de resumen */
+.resumen-item {
+  font-size: 18px;
+  margin: 12px 0;
+  color: var(--color-texto-principal);
+}
+
+/* Texto resaltado */
+.highlight {
+  font-weight: 600;
+  color: var(--color-acento);
+}
